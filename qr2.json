@@ -1,0 +1,88 @@
+{
+  "credentialSubject": {
+    "fhirVersion": "4.0.1",
+    "fhirBundle": {
+      "resourceType": "Bundle",
+      "type": "collection",
+      "entry": [
+        {
+          "fullUrl": "resource:0",
+          "resource": {
+            "resourceType": "Patient",
+            "name": [
+              {
+                "family": "FARNSWORTH",
+                "given": [
+                  "SHANE"
+                ]
+              }
+            ],
+            "birthDate": "1973-07-19"
+          }
+        },
+        {
+          "fullUrl": "resource:1",
+          "resource": {
+            "resourceType": "Immunization",
+            "status": "completed",
+            "vaccineCode": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/cvx",
+                  "code": "208"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "28581000087106"
+                }
+              ]
+            },
+            "patient": {
+              "reference": "resource:0"
+            },
+            "occurrenceDateTime": "2021-05-09",
+            "lotNumber": "EW0193",
+            "performer": [
+              {
+                "actor": {
+                  "display": "ICBC Claim Centre - North Vancouver"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "fullUrl": "resource:2",
+          "resource": {
+            "resourceType": "Immunization",
+            "status": "completed",
+            "vaccineCode": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/sid/cvx",
+                  "code": "208"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "28581000087106"
+                }
+              ]
+            },
+            "patient": {
+              "reference": "resource:0"
+            },
+            "occurrenceDateTime": "2021-07-13",
+            "lotNumber": "FA9099",
+            "performer": [
+              {
+                "actor": {
+                  "display": "ICBC Claim Centre - North Vancouver"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
